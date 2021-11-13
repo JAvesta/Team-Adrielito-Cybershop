@@ -1,0 +1,240 @@
+/* ========== FONTS ========== */
+@font-face {
+    font-family: TruenoLight;
+    src: url("/fonts/TruenoLt.otf");
+}
+
+@font-face {
+    font-family: TruenoSemiBold;
+    src: url("/fonts/TruenoSBd.otf");
+}
+
+@font-face {
+    font-family: TruenoBold;
+    src: url("/fonts/TruenoBd.otf");
+}
+
+/* ========== SEMANTIC TAGS ========== */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* ========== UNIVERSAL TAGS ========== */
+.top, .slogan, .bottom {
+    height: 100vh;
+}
+
+/* ========== TOP DIV ========== */
+.top {
+    background-image: url("/Group 4.png"); 
+    /* padding: 10%; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top >* {
+    margin: 0;
+}
+
+.Title > * {
+    font-family: TruenoBold;
+    font-size: 9rem;
+    color: white;
+    text-align: center;
+}
+
+.top > .Title {
+    height: 28rem;
+}
+
+.top > .Slogan1 {
+    font-family: TruenoLight;
+    font-size: 2.8rem;
+    color: white;
+    text-align: center;
+}
+
+.Button {
+    border: .5rem solid white;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 2.8rem 5.6rem;
+    font-size: 3rem;
+    font-family: TruenoBold;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    transition: all .2s ease-in-out;
+    
+}
+.Button:hover{
+    transform: scale(1.1) translateY(1rem); 
+    background-color: white;
+    color:rgba(0,0,0,1);
+    cursor: pointer;
+}
+
+/* ========== OPTIMUM PRIDE ========== */
+/* ========== URGH ERGH URGH ========== */
+/* ========== MID DIV ========== */
+.slogan {
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slogan > .slogan-top-layer {
+    background-color: rgb(255, 255, 255);
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.slogan > .slogan-bot-layer {
+    background-color: black;
+    background-image: url("/image 1.png");
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.slogan-top-layer > .about-container {
+    display: flex;
+    margin: auto 5rem;
+    border: white solid .2rem;
+}
+
+.about-container >* {
+    font-family: TruenoLight;
+    width: 50%;
+    margin: 3rem;
+    border: rgb(255, 255, 255) solid .2rem;
+}
+
+.about-container > .about-header {
+    font-family: TruenoLight;
+    font-size: 4.8rem;
+    display: flex;
+    margin: 2.5rem 0 0 5rem; 
+    
+}
+
+.about-container > .about-text { 
+    text-align: justify;
+    font-family: TruenoLight;
+    font-size: 2.2rem;
+}
+
+/* ========== BOT DIV ========== */
+.bottom {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    gap: 10rem;
+}
+.bottom > .about-us {
+    /* background-color: orange; */
+}
+.bottom > .about-us > .AtCyberShop {  
+    font-family: TruenoBold;
+    font-size: 5rem;
+    /* background-color: orange; */
+}
+
+.AtCyberShop > h4 {
+    margin: 0;
+}
+
+.bottom > * {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    height: 60rem;
+}
+
+.bottom > .about-us > .intro {
+    font-family: TruenoLight;
+    font-size: 2rem;
+    /* background-color: yellow; */
+    padding: 4rem 0;
+}
+
+.bottom > .about-us > .intro-pic-container {
+    margin-top: auto;
+    margin-bottom: .6rem;
+}
+
+.bottom> .about-us > .intro-pic-container > .intro-pic {
+    width: 100%;
+}
+
+.bottom > .Services-Offered {
+    font-family: TruenoBold;
+    font-size: 5rem;
+    /* background-color: yellow; */
+    gap: 2rem;
+}
+
+.bottom > .Services-Offered > h4 {
+    margin: 0;
+    /* background-color: red; */
+}
+
+.Services-Image-Container {
+    /* background-color: orange; */
+    margin-top: auto;
+}
+
+.Services-Image {
+    width: 100%;
+    margin-top: auto;
+}
+
+/* ========== ULT BOT DIV ========== */
+
+.ultimate-bottom {
+    font-size:inherit; /*to be deleted*/
+}
+
+.ultimate-bottom > .credits {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* ========== RESPONSIVE QUERIES ========== */
+@media all and (max-width: 1536px), all and (max-height: 864px) {    
+    html {
+        font-size: 60%;
+    }
+}
+
+@media all and (max-width: 1366px) {    
+    html {
+        font-size: 40%;
+    }
+}
+
+@media all and (max-width: 1024px) {    
+    html {
+        font-size: 30%;
+    }
+    .bottom {
+        flex-direction: column;
+    }
+}

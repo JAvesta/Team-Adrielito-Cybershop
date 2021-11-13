@@ -1,17 +1,17 @@
 /* ========== FONTS ========== */
 @font-face {
     font-family: TruenoLight;
-    src: url("/fonts/TruenoLt.otf");
+    src: url("../Fonts/TruenoLt.otf");
 }
 
 @font-face {
     font-family: TruenoSemiBold;
-    src: url("/fonts/TruenoSBd.otf");
+    src: url("../Fonts/TruenoSBd.otf");
 }
 
 @font-face {
     font-family: TruenoBold;
-    src: url("/fonts/TruenoBd.otf");
+    src: url("../Fonts/TruenoBd.otf");
 }
 
 /* ========== SEMANTIC TAGS ========== */
@@ -34,7 +34,7 @@ body {
 
 /* ========== TOP DIV ========== */
 .top {
-    background-image: url("/Group 4.png"); 
+    background-image: url("../Group 4.png"); 
     /* padding: 10%; */
     background-repeat: no-repeat;
     background-size:cover;
@@ -105,7 +105,7 @@ body {
 
 .slogan > .slogan-bot-layer {
     background-color: black;
-    background-image: url("/image 1.png");
+    background-image: url("../image 1.png");
     height: 50%;
     background-repeat: no-repeat;
     background-size: 100% auto;
